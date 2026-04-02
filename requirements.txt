@@ -26,6 +26,12 @@ numpy==2.2.6
     #   openvino
     #   shapely
 
+openpyxl==3.1.5
+    # via src.tasks.Login
+pyautogui==0.9.54
+    # via src.tasks.Login
+pyperclip==1.11.0
+    # via src.tasks.Login
 opencv-python==4.12.0.88
     # via -r requirements.in
 openvino==2025.2.0

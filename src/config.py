@@ -64,7 +64,7 @@ config = {
         }
     },
     'windows': {  # Windows游戏请填写此设置
-        'exe': ['StarRail.exe'],
+        'exe': ['StarTW.exe'],
         # 'hwnd_class': 'UnrealWindow', #增加重名检查准确度
         'interaction': 'Genshin', # Genshin:某些操作可以后台, 部分游戏支持 PostMessage:可后台点击, 极少游戏支持 ForegroundPostMessage:前台使用PostMessage Pynput/PyDirect:仅支持前台使用
         'capture_method': ['WGC', 'BitBlt_RenderFull'],  # Windows版本支持的话, 优先使用WGC, 否则使用BitBlt_Full. 支持的capture有 BitBlt, WGC, BitBlt_RenderFull, DXGI
@@ -107,6 +107,10 @@ config = {
     'version': version, #版本
     'my_app': ['src.globals', 'Globals'], #可选. 全局单例对象, 可以存放加载的模型, 使用og.my_app调用
     'onetime_tasks': [  # 用户点击触发的任务
+        ["src.tasks.Login", "Login"],
+        ["src.tasks.TestClickOre", "TestClickOre"],
+        ["src.tasks.TestPriceAdjust", "TestPriceAdjust"],
+        ["src.tasks.ClickTradeCenterTask", "ClickTradeCenterTask"],
         ["src.tasks.MyOneTimeTask", "MyOneTimeTask"],
         ["src.tasks.MyOneTimeWithAGroup", "MyOneTimeWithAGroup"],
         ["src.tasks.MyOneTimeWithAGroup2", "MyOneTimeWithAGroup2"],

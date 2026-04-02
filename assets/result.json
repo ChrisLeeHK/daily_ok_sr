@@ -281,6 +281,168 @@
             "height": 1080,
             "id": 46,
             "file_name": "images/46.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 47,
+            "file_name": "images/trade_center.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 48,
+            "file_name": "images/haoplay_login_screen.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 49,
+            "file_name": "images/email_login_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 50,
+            "file_name": "images/email_login_screen.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 51,
+            "file_name": "images/email_input_field.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 52,
+            "file_name": "images/send_verify_code_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 53,
+            "file_name": "images/verify_code_input.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 54,
+            "file_name": "images/login_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 55,
+            "file_name": "images/connect_start_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 56,
+            "file_name": "images/select_character_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 57,
+            "file_name": "images/close_popup_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 58,
+            "file_name": "images/digging_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 59,
+            "file_name": "images/digging_button_red.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 60,
+            "file_name": "images/beginner_popup.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 61,
+            "file_name": "images/trade_center_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 62,
+            "file_name": "images/sell_tab_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 63,
+            "file_name": "images/collect_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 64,
+            "file_name": "images/gain_money_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 65,
+            "file_name": "images/ore_item.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 66,
+            "file_name": "images/sell_all_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 67,
+            "file_name": "images/price_minus_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 68,
+            "file_name": "images/price_plus_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 69,
+            "file_name": "images/list_sell_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 70,
+            "file_name": "images/confirm_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 71,
+            "file_name": "images/logout_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 72,
+            "file_name": "images/switch_account_button.png"
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "id": 73,
+            "file_name": "images/confirm_logout_button.png"
         }
     ],
     "categories": [
@@ -803,6 +965,114 @@
         {
             "id": 129,
             "name": "top_right_back"
+        },
+        {
+            "id": 130,
+            "name": "trade_center"
+        },
+        {
+            "id": 131,
+            "name": "haoplay_login_screen"
+        },
+        {
+            "id": 132,
+            "name": "email_login_button"
+        },
+        {
+            "id": 133,
+            "name": "email_login_screen"
+        },
+        {
+            "id": 134,
+            "name": "email_input_field"
+        },
+        {
+            "id": 135,
+            "name": "send_verify_code_button"
+        },
+        {
+            "id": 136,
+            "name": "verify_code_input"
+        },
+        {
+            "id": 137,
+            "name": "login_button"
+        },
+        {
+            "id": 138,
+            "name": "connect_start_button"
+        },
+        {
+            "id": 139,
+            "name": "select_character_button"
+        },
+        {
+            "id": 140,
+            "name": "close_popup_button"
+        },
+        {
+            "id": 141,
+            "name": "digging_button"
+        },
+        {
+            "id": 142,
+            "name": "digging_button_red"
+        },
+        {
+            "id": 143,
+            "name": "beginner_popup"
+        },
+        {
+            "id": 144,
+            "name": "trade_center_button"
+        },
+        {
+            "id": 145,
+            "name": "sell_tab_button"
+        },
+        {
+            "id": 146,
+            "name": "collect_button"
+        },
+        {
+            "id": 147,
+            "name": "gain_money_button"
+        },
+        {
+            "id": 148,
+            "name": "ore_item"
+        },
+        {
+            "id": 149,
+            "name": "sell_all_button"
+        },
+        {
+            "id": 150,
+            "name": "price_minus_button"
+        },
+        {
+            "id": 151,
+            "name": "price_plus_button"
+        },
+        {
+            "id": 152,
+            "name": "list_sell_button"
+        },
+        {
+            "id": 153,
+            "name": "confirm_button"
+        },
+        {
+            "id": 154,
+            "name": "logout_button"
+        },
+        {
+            "id": 155,
+            "name": "switch_account_button"
+        },
+        {
+            "id": 156,
+            "name": "confirm_logout_button"
         }
     ],
     "annotations": [
@@ -2740,6 +3010,276 @@
             "ignore": 0,
             "iscrowd": 0,
             "area": 11453.713442915643
+        },
+        {
+            "id": 129,
+            "image_id": 47,
+            "category_id": 130,
+            "segmentation": [],
+            "bbox": [1504, 202, 88, 88],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 7744
+        },
+        {
+            "id": 130,
+            "image_id": 48,
+            "category_id": 131,
+            "segmentation": [],
+            "bbox": [592, 263, 753, 648],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 487944
+        },
+        {
+            "id": 131,
+            "image_id": 49,
+            "category_id": 132,
+            "segmentation": [],
+            "bbox": [680, 603, 583, 88],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 51304
+        },
+        {
+            "id": 132,
+            "image_id": 50,
+            "category_id": 133,
+            "segmentation": [],
+            "bbox": [701, 515, 548, 63],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 34524
+        },
+        {
+            "id": 133,
+            "image_id": 51,
+            "category_id": 134,
+            "segmentation": [],
+            "bbox": [701, 515, 548, 63],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 34524
+        },
+        {
+            "id": 134,
+            "image_id": 52,
+            "category_id": 135,
+            "segmentation": [],
+            "bbox": [1000, 585, 244, 63],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 15860
+        },
+        {
+            "id": 135,
+            "image_id": 53,
+            "category_id": 136,
+            "segmentation": [],
+            "bbox": [700, 567, 300, 67],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 20100
+        },
+        {
+            "id": 136,
+            "image_id": 54,
+            "category_id": 137,
+            "segmentation": [],
+            "bbox": [697, 679, 542, 67],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 36314
+        },
+        {
+            "id": 137,
+            "image_id": 55,
+            "category_id": 138,
+            "segmentation": [],
+            "bbox": [716, 875, 506, 52],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 26312
+        },
+        {
+            "id": 138,
+            "image_id": 56,
+            "category_id": 139,
+            "segmentation": [],
+            "bbox": [1443, 920, 415, 105],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 43575
+        },
+        {
+            "id": 139,
+            "image_id": 57,
+            "category_id": 140,
+            "segmentation": [],
+            "bbox": [1584, 219, 27, 29],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 783
+        },
+        {
+            "id": 140,
+            "image_id": 58,
+            "category_id": 141,
+            "segmentation": [],
+            "bbox": [1454, 557, 82, 18],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 1476
+        },
+        {
+            "id": 141,
+            "image_id": 59,
+            "category_id": 142,
+            "segmentation": [],
+            "bbox": [1456, 558, 81, 17],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 1377
+        },
+        {
+            "id": 142,
+            "image_id": 60,
+            "category_id": 143,
+            "segmentation": [],
+            "bbox": [391, 256, 1158, 402],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 465516
+        },
+        {
+            "id": 143,
+            "image_id": 61,
+            "category_id": 144,
+            "segmentation": [],
+            "bbox": [1504, 203, 87, 88],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 7656
+        },
+        {
+            "id": 144,
+            "image_id": 62,
+            "category_id": 145,
+            "segmentation": [],
+            "bbox": [26, 787, 215, 92],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 27436
+        },
+        {
+            "id": 145,
+            "image_id": 63,
+            "category_id": 146,
+            "segmentation": [],
+            "bbox": [1423, 184, 57, 56],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 3192
+        },
+        {
+            "id": 146,
+            "image_id": 64,
+            "category_id": 147,
+            "segmentation": [],
+            "bbox": [1598, 974, 216, 43],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 9288
+        },
+        {
+            "id": 147,
+            "image_id": 65,
+            "category_id": 148,
+            "segmentation": [],
+            "bbox": [382, 142, 101, 101],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 10201
+        },
+        {
+            "id": 148,
+            "image_id": 66,
+            "category_id": 149,
+            "segmentation": [],
+            "bbox": [1676, 528, 61, 45],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 2745
+        },
+        {
+            "id": 149,
+            "image_id": 67,
+            "category_id": 150,
+            "segmentation": [],
+            "bbox": [1345, 705, 61, 48],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 2928
+        },
+        {
+            "id": 150,
+            "image_id": 68,
+            "category_id": 151,
+            "segmentation": [],
+            "bbox": [1603, 707, 61, 48],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 2928
+        },
+        {
+            "id": 151,
+            "image_id": 69,
+            "category_id": 152,
+            "segmentation": [],
+            "bbox": [1735, 950, 152, 51],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 7752
+        },
+        {
+            "id": 152,
+            "image_id": 70,
+            "category_id": 153,
+            "segmentation": [],
+            "bbox": [1056, 761, 281, 69],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 19389
+        },
+        {
+            "id": 153,
+            "image_id": 71,
+            "category_id": 154,
+            "segmentation": [],
+            "bbox": [1829, 981, 70, 63],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 4410
+        },
+        {
+            "id": 154,
+            "image_id": 72,
+            "category_id": 155,
+            "segmentation": [],
+            "bbox": [1815, 118, 74, 75],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 5550
+        },
+        {
+            "id": 155,
+            "image_id": 73,
+            "category_id": 156,
+            "segmentation": [],
+            "bbox": [1056, 763, 280, 68],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 19040
         }
     ],
     "info": {
