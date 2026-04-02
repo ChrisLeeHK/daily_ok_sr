@@ -72,9 +72,6 @@ config = {
         'force_no_hdr': False, #True=当用户开启AutoHDR时候禁止使用
         'require_bg': True # 要求使用后台截图
     },
-    'adb': {  # Windows游戏请填写此设置, mumu模拟器使用原生截图和input,速度极快. 其他模拟器和真机使用adb,截图速度较慢
-        'packages': ['com.abc.efg1', 'com.abc.efg1']
-    },
     'start_timeout': 120,  # default 60
     'window_size': { #ok-script窗口大小
         'width': 1200,

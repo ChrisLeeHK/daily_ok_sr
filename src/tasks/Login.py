@@ -1,5 +1,3 @@
-import json
-import os
 import re
 import time
 from datetime import datetime, timedelta
@@ -13,55 +11,41 @@ from src.tasks.MyBaseTask import MyBaseTask
 
 MAIL_TM_API = "https://api.mail.tm"
 ACCOUNT_PATH = r"C:\Users\chris\Documents\AIWork\BLSR\daily_ok_sr\Account.xlsx"
-LOGOUT_LOG_PATH = r"C:\Users\chris\Documents\AIWork\BLSR\daily_ok_sr\logout_times.json"
 
 
-def _load_logout_times():
-    if os.path.exists(LOGOUT_LOG_PATH):
-        with open(LOGOUT_LOG_PATH, 'r') as f:
-            return json.load(f)
-    return {}
-
-
-def _save_logout_time(email):
-    data = _load_logout_times()
-    data[email] = datetime.now().isoformat()
-    with open(LOGOUT_LOG_PATH, 'w') as f:
-        json.dump(data, f, indent=2)
-
-
-def _save_to_xlsx(email, money):
-    """Save logout date (col C) and money (col D) to the account's row in Account.xlsx."""
+def _save_to_xlsx(email, money=None, save_date=False):
+    """Save logout date (col C) and/or money (col D) to the account's row in Account.xlsx."""
     wb = openpyxl.load_workbook(ACCOUNT_PATH)
     ws = wb.active
     for row_idx, row in enumerate(ws.iter_rows(), start=1):
         if row[0].value == email:
-            ws.cell(row=row_idx, column=3).value = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            ws.cell(row=row_idx, column=4).value = money
+            if save_date:
+                ws.cell(row=row_idx, column=3).value = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            if money is not None:
+                ws.cell(row=row_idx, column=4).value = money
             break
     wb.save(ACCOUNT_PATH)
 
 
-def _next_reset_time():
-    """Returns the next 8am reset time."""
-    now = datetime.now()
-    reset = now.replace(hour=8, minute=0, second=0, microsecond=0)
-    if now >= reset:
-        reset += timedelta(days=1)
-    return reset
-
-
 def _should_skip(email):
-    """Returns True if the account logged out after the last 8am reset."""
-    data = _load_logout_times()
-    if email not in data or not data[email]:
-        return False
-    logout_time = datetime.fromisoformat(data[email])
-    now = datetime.now()
-    last_reset = now.replace(hour=8, minute=0, second=0, microsecond=0)
-    if now < last_reset:
-        last_reset -= timedelta(days=1)
-    return logout_time >= last_reset
+    """Returns True if the account's logout date (col C) is after the last 8am reset."""
+    wb = openpyxl.load_workbook(ACCOUNT_PATH)
+    ws = wb.active
+    for row in ws.iter_rows():
+        if row[0].value == email:
+            date_val = ws.cell(row=row[0].row, column=3).value
+            if not date_val:
+                return False
+            try:
+                logout_time = datetime.strptime(str(date_val), '%Y-%m-%d %H:%M:%S')
+            except ValueError:
+                return False
+            now = datetime.now()
+            last_reset = now.replace(hour=8, minute=0, second=0, microsecond=0)
+            if now < last_reset:
+                last_reset -= timedelta(days=1)
+            return logout_time >= last_reset
+    return False
 
 
 def _load_accounts():
@@ -439,6 +423,6 @@ class Login(MyBaseTask):
         self.sleep(2)
 
         if email:
-            _save_logout_time(email)
+            _save_to_xlsx(email, save_date=True)
             self.log_info(f"已記錄 {email} 登出時間")
         self.log_info("已登出", notify=True)
