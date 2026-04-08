@@ -283,7 +283,7 @@ class Login(MyBaseTask):
 
         # Step 3: Click 我要賣 button (skip to Step 4 if not found)
         self.log_info("點擊我要賣...")
-        sell_tab = self.wait_until(lambda: self.find_one("sell_tab_button"), time_out=10)
+        sell_tab = self.wait_until(lambda: self.find_one("sell_tab_button"), time_out=5)
         if sell_tab:
             self.click_box(sell_tab)
             self.sleep(1)
